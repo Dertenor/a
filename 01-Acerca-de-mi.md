@@ -9,4 +9,3 @@ Mi nombre es Daniel Benjamín Sandoval López, me gusta que me digan Benja, teng
 
 ![fotomia](assets/img/Acercademi/fotomia)
 
-ddd
