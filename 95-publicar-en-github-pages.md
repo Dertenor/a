@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publicar en GitHub Pages
-nav_order: 2
+nav_order: 3
 ---
 
 # Publicar sitio en GitHub Pages
