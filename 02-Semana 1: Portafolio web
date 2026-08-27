@@ -37,3 +37,22 @@ baseurl: "/TU_REPO"
 
 - En esta parte tienes que poner exactamente tu nombre de usuario sin boorar nada antes de la doble barra, y tampoco borrando lo que hay a partir del .github
 - en donde dice "TU_REPO" solo borra esa parte y ramplázalo por el nombre del repositorio que le pusiste antes, para estos dos pasos era importante lo que te mencioné antes 
+
+## 5) Guardar Tus Cambios 
+
+1.- Para esto primero tendrás que hacer un cambio al archivo, intenta bque sea algo muy sencillo como crear una nueva carpeta o borrar un comnetario en el código 
+2:- Después te vas al ícono que son tres círculos huecos unids por un palito
+3.- Una vez ahí tienes que ponerle un comentario para identificar que cambios hiciste en ese momento ya que si llegas a necesitar retroceder a una versión más antigua de tu página podrás saber hasta que cambios queires llegar y poder corregir cualquier cosa que necesites o simplemnete para "retroceder en el tiempo".
+4.- Una vez que pones tu comnetario le das al botón de color que dice **Confirmación o Summit**, una vez hehco esto tendrás que esperar un poco a que se guarden los cambios, un aproximadamnete un minuto para que los cambios se vean reflejados en tu página web
+
+## 6) obtener la URL
+
+- Cierra tu codespace y regresa a la página principal, selecciona nuevamnete en el menú tu usuario.
+- Una vez ahí, en la barra superior selecciona **settings**.
+- Aparecerá un menú a la derecha con varias opciones, una de las de hasta abajo será **Pages**, selecciona esa.
+- Una vez ahí busca el apartadp de **Build and deployment**, ahí tendras que configurar unas cosas-
+- En el apartado "source" selecciona la opción "Deploy from a branch"
+- Luego en el ícono rato que se parece a una h al revés, selecciona la opción **main**
+- A continuación en el ícono del folder selecciona la opción de **/(root)**
+- Después a la derecha de esos dos apartados selecciona **save***
+- Por último vuelve al partado de tu barra supeior y selecciona el partado de <>Code nuevamente, busca el engrane de la pantalla a la derecha y rellena la casilla que dice **Use yoyurb GitHub Pages website** y dale al botón de color que dice **Save changes**.
