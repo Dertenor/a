@@ -1,0 +1,39 @@
+---
+layout: default
+title: Semana 1: Portafolio web
+nav_order: 2
+---
+
+# Semana 1: Portafolio web
+
+## 1) Crear la cuenta
+
+Primero nos vamos a la página principal de github en la cual tendrás que poner tu correo y contraseña junto con otros pasos para veirficar tu ceunta
+
+## 2) Crear el archivo
+
+1.- Primero tuve que abrir el siguiente enlace e iniciar sesión en mi cuenta para poder cear el archivo
+
+https://github.com/HuberGiron/portafolio-just-the-docs
+
+2.- Después nos vamos al apartado que dice **<>Code**, luego le damos click en donde dice **fork** donde tendrás que introducir tu isuario (el owner) y el nombre del respositorio, ambos datos son importantes que los sepas bien para futuros pasos, y por último le das click en **create fork**.
+
+## 3) Abrir el Codespace 
+
+- Ir a la página principal
+- Abir el menu de la derecha y seleccionar tu usuario (la opción de hasta abajo)
+- Asegurarte que en la barra superior estes en el apartado de <>Code
+- Dar lcick en el botón verde de <>Code (uno esta en la barra superior y este está un poco mas al centro de la pantalla)
+- Te abrirá un mini menu desplegable el cual en la parte superior tiene dos apartados, que son local y codespaces, seleccionas codespaces, y luego le das al botón de create codespace 
+
+## 4) Configurar el Codespace
+
+Este paso es muy imortante ya que de realizarse mal tendrás que borrar el archivo y teneer que hacer todo el rpoceso de crear el archivo nuevamente, para eso tiene que abrir el buscador e introducir "_config.yml" y vas a ver una parte del códigp de la página en la cual se vera de la siguiente manera.
+
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+
+- En esta parte tienes que poner exactamente tu nombre de usuario sin boorar nada antes de la doble barra, y tampoco borrando lo que hay a partir del .github
+- en donde dice "TU_REPO" solo borra esa parte y ramplázalo por el nombre del repositorio que le pusiste antes, para estos dos pasos era importante lo que te mencioné antes 
