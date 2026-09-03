@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Escribir en Markdown
-nav_order: 6
+nav_order: 8
 ---
 
 # Escribir en Markdown

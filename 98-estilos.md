@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Estilos y personalización visual
-nav_order: 7
+nav_order: 9
 ---
 
 # Estilos y personalización visual
