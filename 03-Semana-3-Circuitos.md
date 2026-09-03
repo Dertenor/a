@@ -86,7 +86,179 @@ url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
 ```
 
+## 2° Circuito
 
+![tincir2](assets/img/Semana3/tincir1)
+![forcir2](assets/img/Semana3/fotcir1)
+![vidcir2](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+
+## 3° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 4° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 5° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 6° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+
+## 7° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 8° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 9° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 10° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 11° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 12° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 13° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 14° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 15° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 16° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 17° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 18° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 19° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+## 20° Circuito
+
+![tincir1](assets/img/Semana3/tincir1)
+![forcir1](assets/img/Semana3/fotcir1)
+![vidcir1](assets/img/Semana3/vidcir1)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
 ## Conclusión 
 
 Aprendí 
