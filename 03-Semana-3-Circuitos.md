@@ -73,7 +73,7 @@ void loop() {
 
 Tinker
 
-![tincir1](assets/img/Semana3/tincir1)
+![tincir1](assets/img/Semana3/tincir1.png)
 
 Foto
 
@@ -92,7 +92,7 @@ baseurl: "/TU_REPO"
 
 ## 2° Circuito
 
-![tincir2](assets/img/Semana3/tincir2)
+![tincir2](assets/img/Semana3/tincir2.png)
 ![fotcir2](assets/img/Semana3/fotcir2.jpg)
 ![vidcir2](URL)
 ```yml
@@ -102,7 +102,7 @@ baseurl: "/TU_REPO"
 
 ## 3° Circuito
 
-![tincir3](assets/img/Semana3/tincir3)
+![tincir3](assets/img/Semana3/tincir3.png)
 ![fotcir3](assets/img/Semana3/fotcir3.jpg)
 ![vidcir3](URL)
 ```yml
@@ -111,7 +111,7 @@ baseurl: "/TU_REPO"
 ```
 ## 4° Circuito
 
-![tincir4](assets/img/Semana3/tincir4)
+![tincir4](assets/img/Semana3/tincir4.png)
 ![fotcir4](assets/img/Semana3/fotcir4.jpg)
 ![vidcir4](URL)
 ```yml
@@ -120,7 +120,7 @@ baseurl: "/TU_REPO"
 ```
 ## 5° Circuito
 
-![tincir5](assets/img/Semana3/tincir5)
+![tincir5](assets/img/Semana3/tincir5.png)
 ![fotcir5](assets/img/Semana3/fotcir5.jpg)
 ![vidcir5](URL)
 ```yml
@@ -129,7 +129,7 @@ baseurl: "/TU_REPO"
 ```
 ## 6° Circuito
 
-![tincir6](assets/img/Semana3/tincir6)
+![tincir6](assets/img/Semana3/tincir6.png)
 ![fotcir6](assets/img/Semana3/fotcir6.jpg)
 ![vidcir6](URL)
 ```yml
@@ -139,7 +139,7 @@ baseurl: "/TU_REPO"
 
 ## 7° Circuito
 
-![tincir7](assets/img/Semana3/tincir7)
+![tincir7](assets/img/Semana3/tincir7.png)
 ![fotcir7](assets/img/Semana3/fotcir7.jpg)
 ![vidcir7](URL)
 ```yml
@@ -148,7 +148,7 @@ baseurl: "/TU_REPO"
 ```
 ## 8° Circuito
 
-![tincir8](assets/img/Semana3/tincir8)
+![tincir8](assets/img/Semana3/tincir8.png)
 ![fotcir8](assets/img/Semana3/fotcir8.jpg)
 ![vidcir8](URL)
 ```yml
@@ -157,7 +157,7 @@ baseurl: "/TU_REPO"
 ```
 ## 9° Circuito
 
-![tincir9](assets/img/Semana3/tincir9)
+![tincir9](assets/img/Semana3/tincir9.png)
 ![fotcir9](assets/img/Semana3/fotcir9.jpg)
 ![vidcir9](URL)
 ```yml
@@ -166,7 +166,7 @@ baseurl: "/TU_REPO"
 ```
 ## 10° Circuito
 
-![tincir10](assets/img/Semana3/tincir10)
+![tincir10](assets/img/Semana3/tincir10.png)
 ![fotcir10](assets/img/Semana3/fotcir10.jpg)
 ![vidcir10](URL)
 ```yml 
@@ -175,7 +175,7 @@ baseurl: "/TU_REPO"
 ```
 ## 11° Circuito
 
-![tincir11](assets/img/Semana3/tincir11)
+![tincir11](assets/img/Semana3/tincir11.png)
 ![fotcir11](assets/img/Semana3/fotcir11.jpg)
 ![vidcir11](URL)
 ```yml
@@ -184,7 +184,7 @@ baseurl: "/TU_REPO"
 ```
 ## 12° Circuito
 
-![tincir12](assets/img/Semana3/tincir12)
+![tincir12](assets/img/Semana3/tincir12.png)
 ![fotcir12](assets/img/Semana3/fotcir12.jpg)
 ![vidcir12](URL)
 ```yml
@@ -193,7 +193,7 @@ baseurl: "/TU_REPO"
 ```
 ## 13° Circuito
 
-![tincir13](assets/img/Semana3/tincir13)
+![tincir13](assets/img/Semana3/tincir13.png)
 ![fotcir13](assets/img/Semana3/fotcir13.jpg)
 ![vidcir13](URL)
 ```yml
@@ -202,7 +202,7 @@ baseurl: "/TU_REPO"
 ```
 ## 14° Circuito
 
-![tincir14](assets/img/Semana3/tincir14)
+![tincir14](assets/img/Semana3/tincir14.png)
 ![fotcir14](assets/img/Semana3/fotcir14.jpg)
 ![vidcir14](URL)
 ```yml
@@ -211,7 +211,7 @@ baseurl: "/TU_REPO"
 ```
 ## 15° Circuito
 
-![tincir15](assets/img/Semana3/tincir15)
+![tincir15](assets/img/Semana3/tincir15.png)
 ![fotcir15](assets/img/Semana3/fotcir15.jpg)
 ![vidcir15](URL)
 ```yml
@@ -220,7 +220,7 @@ baseurl: "/TU_REPO"
 ```
 ## 16° Circuito
 
-![tincir16](assets/img/Semana3/tincir16)
+![tincir16](assets/img/Semana3/tincir16.png)
 ![fotcir16](assets/img/Semana3/fotcir16.jpg)
 ![vidcir16](URL)
 ```yml
@@ -229,7 +229,7 @@ baseurl: "/TU_REPO"
 ```
 ## 17° Circuito
 
-![tincir17](assets/img/Semana3/tincir17)
+![tincir17](assets/img/Semana3/tincir17.png)
 ![fotcir17](assets/img/Semana3/fotcir17.jpg)
 ![vidcir17](URL)
 ```yml
@@ -238,7 +238,7 @@ baseurl: "/TU_REPO"
 ```
 ## 18° Circuito
 
-![tincir18](assets/img/Semana3/tincir18)
+![tincir18](assets/img/Semana3/tincir18.png)
 ![fotcir18](assets/img/Semana3/fotcir18.jpg)
 ![vidcir18](URL)
 ```yml
@@ -247,7 +247,7 @@ baseurl: "/TU_REPO"
 ```
 ## 19° Circuito
 
-![tincir19](assets/img/Semana3/tincir19)
+![tincir19](assets/img/Semana3/tincir19.png)
 ![fotcir19](assets/img/Semana3/fotcir19.jpg)
 ![vidcir19](URL)
 ```yml
@@ -256,9 +256,36 @@ baseurl: "/TU_REPO"
 ```
 ## 20° Circuito
 
-![tincir20](assets/img/Semana3/tincir20)
+![tincir20](assets/img/Semana3/tincir20.png)
 ![fotcir20](assets/img/Semana3/fotcir20.jpg)
 ![vidcir20](URL)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+# 21° Circuito
+
+![tincir21](assets/img/Semana3/tincir21.png)
+![fotcir21](assets/img/Semana3/fotcir21.jpg)
+![vidcir21](URL)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+# 22° Circuito
+
+![tincir22](assets/img/Semana3/tincir22.png)
+![fotcir22](assets/img/Semana3/fotcir22.jpg)
+![vidcir22](URL)
+```yml
+url: "https://TU_USUARIO.github.io"
+baseurl: "/TU_REPO"
+```
+# 23° Circuito
+
+![tincir23](assets/img/Semana3/tincir23.png)
+![fotcir23](assets/img/Semana3/fotcir23.jpg)
+![vidcir23](URL)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
