@@ -79,9 +79,7 @@ Foto
 
 ![fotcir1](assets/img/Semana3/fotcir1.jpg)
 
-Video
-
-[vidcir1](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+**Video:**[Video del circuito 1 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 
 Código
 
@@ -94,7 +92,7 @@ baseurl: "/TU_REPO"
 
 ![tincir2](assets/img/Semana3/tincir2.png)
 ![fotcir2](assets/img/Semana3/fotcir2.jpg)
-![vidcir2](URL)
+**Video:**[Video del circuito 2 funcionando (YouTube)](https://youtu.be/54HbVc4zJCo?si=KiOWMMvYAZS3Lb-_)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -104,7 +102,7 @@ baseurl: "/TU_REPO"
 
 ![tincir3](assets/img/Semana3/tincir3.png)
 ![fotcir3](assets/img/Semana3/fotcir3.jpg)
-![vidcir3](URL)
+**Video:**[Video del circuito 3 funcionando (YouTube)](https://youtu.be/9MljCZP0cxw?si=lso3rm0hUqpf3Cnv)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -113,7 +111,7 @@ baseurl: "/TU_REPO"
 
 ![tincir4](assets/img/Semana3/tincir4.png)
 ![fotcir4](assets/img/Semana3/fotcir4.jpg)
-![vidcir4](URL)
+**Video:**[Video del circuito 4 funcionando (YouTube)](https://youtu.be/LJUsGRnbNhs?si=Vp5Rso3VATzhT1fa)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -122,7 +120,7 @@ baseurl: "/TU_REPO"
 
 ![tincir5](assets/img/Semana3/tincir5.png)
 ![fotcir5](assets/img/Semana3/fotcir5.jpg)
-![vidcir5](URL)
+**Video:**[Video del circuito 5 funcionando (YouTube)](https://youtu.be/nQWJhzaKhXI?si=xTUA896019bUI4LW)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -131,7 +129,7 @@ baseurl: "/TU_REPO"
 
 ![tincir6](assets/img/Semana3/tincir6.png)
 ![fotcir6](assets/img/Semana3/fotcir6.jpg)
-![vidcir6](URL)
+**Video:**[Video del circuito 6 funcionando (YouTube)](https://youtu.be/FgfIBhSvAy4?si=GqUWmPBudOSIK_Ic)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -141,7 +139,7 @@ baseurl: "/TU_REPO"
 
 ![tincir7](assets/img/Semana3/tincir7.png)
 ![fotcir7](assets/img/Semana3/fotcir7.jpg)
-![vidcir7](URL)
+**Video:**[Video del circuito 7 funcionando (YouTube)](https://youtu.be/PPpn34sVRk0?si=RB21A6iZAnimhj-i)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -150,7 +148,7 @@ baseurl: "/TU_REPO"
 
 ![tincir8](assets/img/Semana3/tincir8.png)
 ![fotcir8](assets/img/Semana3/fotcir8.jpg)
-![vidcir8](URL)
+**Video:**[Video del circuito 8 funcionando (YouTube)](https://youtu.be/XIffWv5bJlg?si=nRftB71frYA6Fqhd)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -159,7 +157,7 @@ baseurl: "/TU_REPO"
 
 ![tincir9](assets/img/Semana3/tincir9.png)
 ![fotcir9](assets/img/Semana3/fotcir9.jpg)
-![vidcir9](URL)
+**Video:**[Video del circuito 9 funcionando (YouTube)](https://youtu.be/pmFdMPhLtLw?si=8VfNHsCfAxwyYuut)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -168,7 +166,7 @@ baseurl: "/TU_REPO"
 
 ![tincir10](assets/img/Semana3/tincir10.png)
 ![fotcir10](assets/img/Semana3/fotcir10.jpg)
-![vidcir10](URL)
+**Video:**[Video del circuito 10 funcionando (YouTube)](https://youtu.be/1Djhibp9MwU?si=X6Ys6APdpAAKXxQu)
 ```yml 
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -177,7 +175,7 @@ baseurl: "/TU_REPO"
 
 ![tincir11](assets/img/Semana3/tincir11.png)
 ![fotcir11](assets/img/Semana3/fotcir11.jpg)
-![vidcir11](URL)
+**Video:**[Video del circuito 11 funcionando (YouTube)](https://youtu.be/x4rmQv8Artw?si=59HWQjyqz2z_dLyO)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -186,7 +184,7 @@ baseurl: "/TU_REPO"
 
 ![tincir12](assets/img/Semana3/tincir12.png)
 ![fotcir12](assets/img/Semana3/fotcir12.jpg)
-![vidcir12](URL)
+**Video:**[Video del circuito 12 funcionando (YouTube)](https://youtu.be/e91HsMz7TC0?si=h8mLBX680REmPRBF)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -195,7 +193,7 @@ baseurl: "/TU_REPO"
 
 ![tincir13](assets/img/Semana3/tincir13.png)
 ![fotcir13](assets/img/Semana3/fotcir13.jpg)
-![vidcir13](URL)
+**Video:**[Video del circuito 13 funcionando (YouTube)](https://youtu.be/tY-GWnorAdo?si=8mNczIZf4OHHZR98)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -204,7 +202,7 @@ baseurl: "/TU_REPO"
 
 ![tincir14](assets/img/Semana3/tincir14.png)
 ![fotcir14](assets/img/Semana3/fotcir14.jpg)
-![vidcir14](URL)
+**Video:**[Video del circuito 14 funcionando (YouTube)](https://youtu.be/THGUtYVkBB8?si=s8locrJbJ2duXXFE)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -213,7 +211,7 @@ baseurl: "/TU_REPO"
 
 ![tincir15](assets/img/Semana3/tincir15.png)
 ![fotcir15](assets/img/Semana3/fotcir15.jpg)
-![vidcir15](URL)
+**Video:**[Video del circuito 15 funcionando (YouTube)](https://youtu.be/h30HCgBj6zM?si=bGn3ScuOgziIoCxY)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -222,7 +220,7 @@ baseurl: "/TU_REPO"
 
 ![tincir16](assets/img/Semana3/tincir16.png)
 ![fotcir16](assets/img/Semana3/fotcir16.jpg)
-![vidcir16](URL)
+**Video:**[Video del circuito 16 funcionando (YouTube)](https://youtu.be/DiiEJSx_h1g?si=G6smIfZQGmCcW21o)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -231,7 +229,7 @@ baseurl: "/TU_REPO"
 
 ![tincir17](assets/img/Semana3/tincir17.png)
 ![fotcir17](assets/img/Semana3/fotcir17.jpg)
-![vidcir17](URL)
+**Video:**[Video del circuito 17 funcionando (YouTube)](https://youtu.be/tkFDoZR8kcc?si=ZEEhFyLY-ftpW8zC)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -240,7 +238,7 @@ baseurl: "/TU_REPO"
 
 ![tincir18](assets/img/Semana3/tincir18.png)
 ![fotcir18](assets/img/Semana3/fotcir18.jpg)
-![vidcir18](URL)
+**Video:**[Video del circuito 18 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -249,7 +247,7 @@ baseurl: "/TU_REPO"
 
 ![tincir19](assets/img/Semana3/tincir19.png)
 ![fotcir19](assets/img/Semana3/fotcir19.jpg)
-![vidcir19](URL)
+**Video:**[Video del circuito 19 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -258,7 +256,7 @@ baseurl: "/TU_REPO"
 
 ![tincir20](assets/img/Semana3/tincir20.png)
 ![fotcir20](assets/img/Semana3/fotcir20.jpg)
-![vidcir20](URL)
+**Video:**[Video del circuito 20 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -267,7 +265,7 @@ baseurl: "/TU_REPO"
 
 ![tincir21](assets/img/Semana3/tincir21.png)
 ![fotcir21](assets/img/Semana3/fotcir21.jpg)
-![vidcir21](URL)
+**Video:**[Video del circuito 21 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -276,7 +274,7 @@ baseurl: "/TU_REPO"
 
 ![tincir22](assets/img/Semana3/tincir22.png)
 ![fotcir22](assets/img/Semana3/fotcir22.jpg)
-![vidcir22](URL)
+**Video:**[Video del circuito 22 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
@@ -285,7 +283,7 @@ baseurl: "/TU_REPO"
 
 ![tincir23](assets/img/Semana3/tincir23.png)
 ![fotcir23](assets/img/Semana3/fotcir23.jpg)
-![vidcir23](URL)
+**Video:**[Video del circuito 23 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 url: "https://TU_USUARIO.github.io"
 baseurl: "/TU_REPO"
