@@ -84,8 +84,20 @@ Foto
 Código
 
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 
 ## 2° Circuito
@@ -94,8 +106,17 @@ baseurl: "/TU_REPO"
 ![fotcir2](assets/img/Semana3/fotcir2.jpg)
 **Video:**[Video del circuito 2 funcionando (YouTube)](https://youtu.be/54HbVc4zJCo?si=KiOWMMvYAZS3Lb-_)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+}
 ```
 
 ## 3° Circuito
@@ -104,8 +125,17 @@ baseurl: "/TU_REPO"
 ![fotcir3](assets/img/Semana3/fotcir3.jpg)
 **Video:**[Video del circuito 3 funcionando (YouTube)](https://youtu.be/9MljCZP0cxw?si=lso3rm0hUqpf3Cnv)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, LOW);
+}
 ```
 ## 4° Circuito
 
@@ -113,8 +143,20 @@ baseurl: "/TU_REPO"
 ![fotcir4](assets/img/Semana3/fotcir4.jpg)
 **Video:**[Video del circuito 4 funcionando (YouTube)](https://youtu.be/LJUsGRnbNhs?si=Vp5Rso3VATzhT1fa)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 ## 5° Circuito
 
@@ -122,8 +164,20 @@ baseurl: "/TU_REPO"
 ![fotcir5](assets/img/Semana3/fotcir5.jpg)
 **Video:**[Video del circuito 5 funcionando (YouTube)](https://youtu.be/nQWJhzaKhXI?si=xTUA896019bUI4LW)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 ## 6° Circuito
 
@@ -131,8 +185,20 @@ baseurl: "/TU_REPO"
 ![fotcir6](assets/img/Semana3/fotcir6.jpg)
 **Video:**[Video del circuito 6 funcionando (YouTube)](https://youtu.be/FgfIBhSvAy4?si=GqUWmPBudOSIK_Ic)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 
 ## 7° Circuito
@@ -141,8 +207,20 @@ baseurl: "/TU_REPO"
 ![fotcir7](assets/img/Semana3/fotcir7.jpg)
 **Video:**[Video del circuito 7 funcionando (YouTube)](https://youtu.be/PPpn34sVRk0?si=RB21A6iZAnimhj-i)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 ## 8° Circuito
 
