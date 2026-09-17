@@ -590,7 +590,7 @@ void loop()
 ## 18° Circuito
 
 ![tincir18](assets/img/Semana3/tincir18.png)
-![fotcir18](assets/img/Semana3/fotcir18.jpg)
+![fotcir18](assets/img/Semana3/fotcir18.jpeg)
 **Video:**[Video del circuito 18 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
@@ -615,7 +615,7 @@ void loop()
 ## 19° Circuito
 
 ![tincir19](assets/img/Semana3/tincir19.png)
-![fotcir19](assets/img/Semana3/fotcir19.jpg)
+![fotcir19](assets/img/Semana3/fotcir19.jpeg)
 **Video:**[Video del circuito 19 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
@@ -652,7 +652,7 @@ void loop()
 ## 20° Circuito
 
 ![tincir20](assets/img/Semana3/tincir20.png)
-![fotcir20](assets/img/Semana3/fotcir20.jpg)
+![fotcir20](assets/img/Semana3/fotcir20.jpeg)
 **Video:**[Video del circuito 20 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
@@ -686,7 +686,7 @@ void loop()
 # 21° Circuito
 
 ![tincir21](assets/img/Semana3/tincir21.png)
-![fotcir21](assets/img/Semana3/fotcir21.jpg)
+![fotcir21](assets/img/Semana3/fotcir21.jpeg)
 **Video:**[Video del circuito 21 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
@@ -726,7 +726,7 @@ void loop()
 # 22° Circuito
 
 ![tincir22](assets/img/Semana3/tincir22.png)
-![fotcir22](assets/img/Semana3/fotcir22.jpg)
+![fotcir22](assets/img/Semana3/fotcir22.jpeg)
 **Video:**[Video del circuito 22 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
@@ -773,7 +773,7 @@ void loop()
 # 23° Circuito
 
 ![tincir23](assets/img/Semana3/tincir23.png)
-![fotcir23](assets/img/Semana3/fotcir23.jpg)
+![fotcir23](assets/img/Semana3/fotcir23.jpeg)
 **Video:**[Video del circuito 23 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
 // C++ code
