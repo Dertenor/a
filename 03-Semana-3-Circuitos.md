@@ -37,47 +37,47 @@ void loop() {
 ## Componentes y Materiales 
 
 - **Tarjeta Arduino Uno**: El Arduino Uno es una placa electrónica de desarrollo basada en un microcontrolador que permite conectar el mundo físico con el código de programación de forma sencilla. 
-![componente1](assets/img/Semana3/componente1.jpeg)
+![componente1](assets/img/Semana3/componentes/componente1.jpeg)
 
 - **Cable USB-A - USB-B**: Es un cable que conecta un ordenador u otro dispositivo central a un periférico grande mediante dos tipos de conectores diferentes en sus extremos.
-![componente2](assets/img/Semana3/componente2.jpeg)
+![componente2](assets/img/Semana3/componentes/componente2.jpeg)
 
 - **Protoboard**:  Es una placa plástica con orificios interconectados internamente por láminas metálicas que permite armar y probar circuitos eléctricos de forma temporal sin necesidad de soldar.
-![componente3](assets/img/Semana3/componente3.jpeg)
+![componente3](assets/img/Semana3/componentes/componente3.jpeg)
 
 - **Jumpers**: Es un cable eléctrico delgado que tiene un conector en cada extremo, diseñado para hacer conexiones rápidas sin necesidad de soldar.
-![componente4](assets/img/Semana3/componente4.jpeg)
+![componente4](assets/img/Semana3/componentes/componente4.jpeg)
 
 - **Leds**: Es un pequeño dispositivo semiconductor que emite luz cuando pasa una corriente eléctrica a través de él.
-![componente5](assets/img/Semana3/componente5.jpeg)
+![componente5](assets/img/Semana3/componentes/componente5.jpeg)
 
 - **Push Button**: Es un pequeño dispositivo semiconductor que emite luz cuando pasa una corriente eléctrica a través de él.
-![componente6](assets/img/Semana3/componente6.jpeg)
+![componente6](assets/img/Semana3/componentes/componente6.jpeg)
 
 - **Resistencias**: Es un componente que se opone al flujo de la corriente eléctrica.
-![componente7](assets/img/Semana3/componente7.jpeg)
+![componente7](assets/img/Semana3/componentes/componente7.jpeg)
 
 - **Display de 7 segmentos**: Es un componente electrónico que sirve para mostrar números y algunos caracteres mediante siete líneas o segmentos que se encienden o apagan.
-![componente8](assets/img/Semana3/componente8.jpeg)
+![componente8](assets/img/Semana3/componentes/componente8.jpeg)
 
 - **Servomotores**: Es un motor eléctrico especial que permite controlar con exactitud la posición angular, la velocidad y la aceleración de su eje. 
-![componente9](assets/img/Semana3/componente9.jpeg)
+![componente9](assets/img/Semana3/componentes/componente9.jpeg)
 
 - **Potenciometro**: Es una resistencia eléctrica variable que permite ajustar de forma manual el voltaje o la corriente en un circuito.
-![componente10](assets/img/Semana3/componente10.jpeg)
+![componente10](assets/img/Semana3/componentes/componente10.jpeg)
 
 - **Fuente de Poder de 3 Canales**: Es un dispositivo que entrega tres salidas de energía independientes o multicanal desde una sola unidad.
-![componente11](assets/img/Semana3/componente11.jpeg)
+![componente11](assets/img/Semana3/componentes/componente11.jpeg)
 
 ## 1° Circuito
 
 Tinker
 
-![tincir1](assets/img/Semana3/tincir1.png)
+![tincir1](assets/img/Semana3/tinkercadcircuito/tincir1.png)
 
 Foto
 
-![fotcir1](assets/img/Semana3/fotcir1.jpg)
+![fotcir1](assets/img/Semana3/fotoscircuitos/fotcir1.jpg)
 
 **Video:**[Video del circuito 1 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 
@@ -102,8 +102,8 @@ void loop()
 
 ## 2° Circuito
 
-![tincir2](assets/img/Semana3/tincir2.png)
-![fotcir2](assets/img/Semana3/fotcir2.jpg)
+![tincir2](assets/img/Semana3/tinkercadcircuito/tincir2.png)
+![fotcir2](assets/img/Semana3/fotoscircuitos/fotcir2.jpg)
 **Video:**[Video del circuito 2 funcionando (YouTube)](https://youtu.be/54HbVc4zJCo?si=KiOWMMvYAZS3Lb-_)
 ```yml
 // C++ code
@@ -121,8 +121,8 @@ void loop()
 
 ## 3° Circuito
 
-![tincir3](assets/img/Semana3/tincir3.png)
-![fotcir3](assets/img/Semana3/fotcir3.jpg)
+![tincir3](assets/img/Semana3/tinkercadcircuito/tincir3.png)
+![fotcir3](assets/img/Semana3/fotoscircuitos/fotcir3.jpg)
 **Video:**[Video del circuito 3 funcionando (YouTube)](https://youtu.be/9MljCZP0cxw?si=lso3rm0hUqpf3Cnv)
 ```yml
 // C++ code
@@ -139,8 +139,8 @@ void loop()
 ```
 ## 4° Circuito
 
-![tincir4](assets/img/Semana3/tincir4.png)
-![fotcir4](assets/img/Semana3/fotcir4.jpg)
+![tincir4](assets/img/Semana3/tinkercadcircuito/tincir4.png)
+![fotcir4](assets/img/Semana3/fotoscircuitos/fotcir4.jpg)
 **Video:**[Video del circuito 4 funcionando (YouTube)](https://youtu.be/LJUsGRnbNhs?si=Vp5Rso3VATzhT1fa)
 ```yml
 // C++ code
@@ -160,8 +160,8 @@ void loop()
 ```
 ## 5° Circuito
 
-![tincir5](assets/img/Semana3/tincir5.png)
-![fotcir5](assets/img/Semana3/fotcir5.jpg)
+![tincir5](assets/img/Semana3/tinkercadcircuito/tincir5.png)
+![fotcir5](assets/img/Semana3/fotoscircuitos/fotcir5.jpg)
 **Video:**[Video del circuito 5 funcionando (YouTube)](https://youtu.be/nQWJhzaKhXI?si=xTUA896019bUI4LW)
 ```yml
 // C++ code
@@ -181,8 +181,8 @@ void loop()
 ```
 ## 6° Circuito
 
-![tincir6](assets/img/Semana3/tincir6.png)
-![fotcir6](assets/img/Semana3/fotcir6.jpg)
+![tincir6](assets/img/Semana3/tinkercadcircuito/tincir6.png)
+![fotcir6](assets/img/Semana3/fotoscircuitos/fotcir6.jpg)
 **Video:**[Video del circuito 6 funcionando (YouTube)](https://youtu.be/FgfIBhSvAy4?si=GqUWmPBudOSIK_Ic)
 ```yml
 // C++ code
@@ -203,8 +203,8 @@ void loop()
 
 ## 7° Circuito
 
-![tincir7](assets/img/Semana3/tincir7.png)
-![fotcir7](assets/img/Semana3/fotcir7.jpg)
+![tincir7](assets/img/Semana3/tinkercadcircuito/tincir7.png)
+![fotcir7](assets/img/Semana3/fotoscircuitos/fotcir7.jpg)
 **Video:**[Video del circuito 7 funcionando (YouTube)](https://youtu.be/PPpn34sVRk0?si=RB21A6iZAnimhj-i)
 ```yml
 // C++ code
@@ -224,8 +224,8 @@ void loop()
 ```
 ## 8° Circuito
 
-![tincir8](assets/img/Semana3/tincir8.png)
-![fotcir8](assets/img/Semana3/fotcir8.jpg)
+![tincir8](assets/img/Semana3/tinkercadcircuito/tincir8.png)
+![fotcir8](assets/img/Semana3/fotoscircuitos/fotcir8.jpg)
 **Video:**[Video del circuito 8 funcionando (YouTube)](https://youtu.be/XIffWv5bJlg?si=nRftB71frYA6Fqhd)
 ```yml
 // C++ code
@@ -250,8 +250,8 @@ void loop()
 ```
 ## 9° Circuito
 
-![tincir9](assets/img/Semana3/tincir9.png)
-![fotcir9](assets/img/Semana3/fotcir9.jpg)
+![tincir9](assets/img/Semana3/tinkercadcircuito/tincir9.png)
+![fotcir9](assets/img/Semana3/fotoscircuitos/fotcir9.jpg)
 **Video:**[Video del circuito 9 funcionando (YouTube)](https://youtu.be/pmFdMPhLtLw?si=8VfNHsCfAxwyYuut)
 ```yml
 // C++ code
@@ -283,8 +283,8 @@ void loop()
 ```
 ## 10° Circuito
 
-![tincir10](assets/img/Semana3/tincir10.png)
-![fotcir10](assets/img/Semana3/fotcir10.jpg)
+![tincir10](assets/img/Semana3/tinkercadcircuito/tincir10.png)
+![fotcir10](assets/img/Semana3/fotoscircuitos/fotcir10.jpg)
 **Video:**[Video del circuito 10 funcionando (YouTube)](https://youtu.be/1Djhibp9MwU?si=X6Ys6APdpAAKXxQu)
 ```yml 
 // C++ code
@@ -340,8 +340,8 @@ void loop()
 ```
 ## 11° Circuito
 
-![tincir11](assets/img/Semana3/tincir11.png)
-![fotcir11](assets/img/Semana3/fotcir11.jpg)
+![tincir11](assets/img/Semana3/tinkercadcircuito/tincir11.png)
+![fotcir11](assets/img/Semana3/fotoscircuitos/fotcir11.jpg)
 **Video:**[Video del circuito 11 funcionando (YouTube)](https://youtu.be/x4rmQv8Artw?si=59HWQjyqz2z_dLyO)
 ```yml
 // C++ code
@@ -361,8 +361,8 @@ void loop()
 ```
 ## 12° Circuito
 
-![tincir12](assets/img/Semana3/tincir12.png)
-![fotcir12](assets/img/Semana3/fotcir12.jpg)
+![tincir12](assets/img/Semana3/tinkercadcircuito/tincir12.png)
+![fotcir12](assets/img/Semana3/fotoscircuitos/fotcir12.jpg)
 **Video:**[Video del circuito 12 funcionando (YouTube)](https://youtu.be/e91HsMz7TC0?si=h8mLBX680REmPRBF)
 ```yml
 // C++ code
@@ -386,8 +386,8 @@ void loop()
 ```
 ## 13° Circuito
 
-![tincir13](assets/img/Semana3/tincir13.png)
-![fotcir13](assets/img/Semana3/fotcir13.jpg)
+![tincir13](assets/img/Semana3/tinkercadcircuito/tincir13.png)
+![fotcir13](assets/img/Semana3/fotoscircuitos/fotcir13.jpg)
 **Video:**[Video del circuito 13 funcionando (YouTube)](https://youtu.be/tY-GWnorAdo?si=8mNczIZf4OHHZR98)
 ```yml
 // C++ code
@@ -415,8 +415,8 @@ void loop()
 ```
 ## 14° Circuito
 
-![tincir14](assets/img/Semana3/tincir14.png)
-![fotcir14](assets/img/Semana3/fotcir14.jpg)
+![tincir14](assets/img/Semana3/tinkercadcircuito/tincir14.png)
+![fotcir14](assets/img/Semana3/fotoscircuitos/fotcir14.jpg)
 **Video:**[Video del circuito 14 funcionando (YouTube)](https://youtu.be/THGUtYVkBB8?si=s8locrJbJ2duXXFE)
 ```yml
 // C++ code
@@ -455,8 +455,8 @@ void loop()
 ```
 ## 15° Circuito
 
-![tincir15](assets/img/Semana3/tincir15.png)
-![fotcir15](assets/img/Semana3/fotcir15.jpg)
+![tincir15](assets/img/Semana3/tinkercadcircuito/tincir15.png)
+![fotcir15](assets/img/Semana3/fotoscircuitos/fotcir15.jpg)
 **Video:**[Video del circuito 15 funcionando (YouTube)](https://youtu.be/h30HCgBj6zM?si=bGn3ScuOgziIoCxY)
 ```yml
 // C++ code
@@ -487,8 +487,8 @@ void loop()
 ```
 ## 16° Circuito
 
-![tincir16](assets/img/Semana3/tincir16.png)
-![fotcir16](assets/img/Semana3/fotcir16.jpg)
+![tincir16](assets/img/Semana3/tinkercadcircuito/tincir16.png)
+![fotcir16](assets/img/Semana3/fotoscircuitos/fotcir16.jpg)
 **Video:**[Video del circuito 16 funcionando (YouTube)](https://youtu.be/DiiEJSx_h1g?si=G6smIfZQGmCcW21o)
 ```yml
 // C++ code
@@ -519,8 +519,8 @@ void loop()
 ```
 ## 17° Circuito
 
-![tincir17](assets/img/Semana3/tincir17.png)
-![fotcir17](assets/img/Semana3/fotcir17.jpg)
+![tincir17](assets/img/Semana3/tinkercadcircuito/tincir17.png)
+![fotcir17](assets/img/Semana3/fotoscircuitos/fotcir17.jpg)
 **Video:**[Video del circuito 17 funcionando (YouTube)](https://youtu.be/tkFDoZR8kcc?si=ZEEhFyLY-ftpW8zC)
 ```yml
 // C++ code
@@ -589,9 +589,9 @@ void loop()
 ```
 ## 18° Circuito
 
-![tincir18](assets/img/Semana3/tincir18.png)
-![fotcir18](assets/img/Semana3/fotcir18.jpeg)
-**Video:**[Video del circuito 18 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir18](assets/img/Semana3/tinkercadcircuito/tincir18.png)
+![fotcir18](assets/img/Semana3/fotoscircuitos/fotcir18.jpeg)
+**Video:**[Video del circuito 18 funcionando (YouTube)]()
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -614,9 +614,9 @@ void loop()
 ```
 ## 19° Circuito
 
-![tincir19](assets/img/Semana3/tincir19.png)
-![fotcir19](assets/img/Semana3/fotcir19.jpeg)
-**Video:**[Video del circuito 19 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir19](assets/img/Semana3/tinkercadcircuito/tincir19.png)
+![fotcir19](assets/img/Semana3/fotoscircuitos/fotcir19.jpeg)
+**Video:**[Video del circuito 19 funcionando (YouTube)]()
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -651,9 +651,9 @@ void loop()
 ```
 ## 20° Circuito
 
-![tincir20](assets/img/Semana3/tincir20.png)
-![fotcir20](assets/img/Semana3/fotcir20.jpeg)
-**Video:**[Video del circuito 20 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir20](assets/img/Semana3/tinkercadcircuito/tincir20.png)
+![fotcir20](assets/img/Semana3/fotoscircuitos/fotcir20.jpeg)
+**Video:**[Video del circuito 20 funcionando (YouTube)]()
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -685,9 +685,9 @@ void loop()
 ```
 # 21° Circuito
 
-![tincir21](assets/img/Semana3/tincir21.png)
-![fotcir21](assets/img/Semana3/fotcir21.jpeg)
-**Video:**[Video del circuito 21 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir21](assets/img/Semana3/tinkercadcircuito/tincir21.png)
+![fotcir21](assets/img/Semana3/fotoscircuitos/fotcir21.jpeg)
+**Video:**[Video del circuito 21 funcionando (YouTube)]()
 ```yml
 // C++ code
 #include <Servo.h>
@@ -725,9 +725,9 @@ void loop()
 ```
 # 22° Circuito
 
-![tincir22](assets/img/Semana3/tincir22.png)
-![fotcir22](assets/img/Semana3/fotcir22.jpeg)
-**Video:**[Video del circuito 22 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir22](assets/img/Semana3/tinkercadcircuito/tincir22.png)
+![fotcir22](assets/img/Semana3/fotoscircuitos/fotcir22.jpeg)
+**Video:**[Video del circuito 22 funcionando (YouTube)]()
 ```yml
 // C++ code
 #include <Servo.h>
@@ -772,9 +772,9 @@ void loop()
 ```
 # 23° Circuito
 
-![tincir23](assets/img/Semana3/tincir23.png)
-![fotcir23](assets/img/Semana3/fotcir23.jpeg)
-**Video:**[Video del circuito 23 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
+![tincir23](assets/img/Semana3/tinkercadcircuito/tincir23.png)
+![fotcir23](assets/img/Semana3/fotoscircuitos/fotcir23.jpeg)
+**Video:**[Video del circuito 23 funcionando (YouTube)]()
 ```yml
 // C++ code
 #include <Servo.h>
