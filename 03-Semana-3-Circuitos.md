@@ -228,8 +228,25 @@ void loop()
 ![fotcir8](assets/img/Semana3/fotcir8.jpg)
 **Video:**[Video del circuito 8 funcionando (YouTube)](https://youtu.be/XIffWv5bJlg?si=nRftB71frYA6Fqhd)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(12, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(12, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
 ```
 ## 9° Circuito
 
@@ -237,8 +254,32 @@ baseurl: "/TU_REPO"
 ![fotcir9](assets/img/Semana3/fotcir9.jpg)
 **Video:**[Video del circuito 9 funcionando (YouTube)](https://youtu.be/pmFdMPhLtLw?si=8VfNHsCfAxwyYuut)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);	//Segmento e
+  pinMode(12, OUTPUT);	//Segmento d
+  pinMode(10, OUTPUT);	//Segmento c
+  pinMode(9, OUTPUT);	//Segmento punto
+  pinMode(7, OUTPUT);	//Segmento b
+  pinMode(6, OUTPUT);	//Segmento a
+  pinMode(5, OUTPUT);	//Segmento f
+  pinMode(4, OUTPUT);	//Segmento g
+}
+
+void loop()
+{
+  digitalWrite(6, HIGH);//Segmento a
+  digitalWrite(7, HIGH); //Segmento b
+  digitalWrite(10, HIGH); //Segmento c
+  digitalWrite(12, HIGH); //Segmento d
+  digitalWrite(13, HIGH); //Segmento e
+  digitalWrite(5, HIGH); //Segmento f
+  digitalWrite(4, HIGH); //Segmento g
+  digitalWrite(9, HIGH); //Segmento punto
+  delay(1000);
+}
 ```
 ## 10° Circuito
 
@@ -246,8 +287,56 @@ baseurl: "/TU_REPO"
 ![fotcir10](assets/img/Semana3/fotcir10.jpg)
 **Video:**[Video del circuito 10 funcionando (YouTube)](https://youtu.be/1Djhibp9MwU?si=X6Ys6APdpAAKXxQu)
 ```yml 
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);	//Segmento e
+  pinMode(12, OUTPUT);	//Segmento d
+  pinMode(10, OUTPUT);	//Segmento c
+  pinMode(9, OUTPUT);	//Segmento punto
+  pinMode(7, OUTPUT);	//Segmento b
+  pinMode(6, OUTPUT);	//Segmento a
+  pinMode(5, OUTPUT);	//Segmento f
+  pinMode(4, OUTPUT);	//Segmento g
+}
+
+void loop()
+{
+    // Mostramos el numero 0
+  digitalWrite(6, HIGH);//Segmento a
+  digitalWrite(7, HIGH); //Segmento b
+  digitalWrite(10, HIGH); //Segmento c
+  digitalWrite(12, HIGH); //Segmento d
+  digitalWrite(13, HIGH); //Segmento e
+  digitalWrite(5, HIGH); //Segmento f
+  digitalWrite(4, LOW); //Segmento g
+  digitalWrite(9, LOW); //Segmento punto
+  delay(1000);
+  
+    // Mostramos el numero 1
+  digitalWrite(6, LOW);//Segmento a
+  digitalWrite(7, HIGH); //Segmento b
+  digitalWrite(10, HIGH); //Segmento c
+  digitalWrite(12, LOW); //Segmento d
+  digitalWrite(13, LOW); //Segmento e
+  digitalWrite(5, LOW); //Segmento f
+  digitalWrite(4, LOW); //Segmento g
+  digitalWrite(9, LOW); //Segmento punto
+  delay(1000);
+  
+    // Mostramos el numero 2
+  digitalWrite(6, HIGH);//Segmento a
+  digitalWrite(7, HIGH); //Segmento b
+  digitalWrite(10, LOW); //Segmento c
+  digitalWrite(12, HIGH); //Segmento d
+  digitalWrite(13, HIGH); //Segmento e
+  digitalWrite(5, LOW); //Segmento f
+  digitalWrite(4, HIGH); //Segmento g
+  digitalWrite(9, LOW); //Segmento punto
+  delay(1000);
+  
+}
 ```
 ## 11° Circuito
 
@@ -255,8 +344,20 @@ baseurl: "/TU_REPO"
 ![fotcir11](assets/img/Semana3/fotcir11.jpg)
 **Video:**[Video del circuito 11 funcionando (YouTube)](https://youtu.be/x4rmQv8Artw?si=59HWQjyqz2z_dLyO)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  pinMode(13, OUTPUT);	//LED
+  
+  pinMode(8, INPUT);	//BOTON
+}
+
+void loop()
+{
+  digitalWrite(13, digitalRead(8)); //Escribimpos en el LED el valor del BOTON
+}
 ```
 ## 12° Circuito
 
@@ -264,8 +365,24 @@ baseurl: "/TU_REPO"
 ![fotcir12](assets/img/Semana3/fotcir12.jpg)
 **Video:**[Video del circuito 12 funcionando (YouTube)](https://youtu.be/e91HsMz7TC0?si=h8mLBX680REmPRBF)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  pinMode(13, OUTPUT);	//LED1
+  pinMode(8, INPUT);	//BOTON1
+  
+  pinMode(11, OUTPUT);	//LED2
+  pinMode(2, INPUT);	//BOTON2
+}
+
+void loop()
+{
+  
+  digitalWrite(13, digitalRead(8)); //Escribimpos en el LED1 el valor del BOTON1
+  digitalWrite(11, digitalRead(2)); //Escribimpos en el LED2 el valor del BOTON2
+}
 ```
 ## 13° Circuito
 
@@ -273,8 +390,28 @@ baseurl: "/TU_REPO"
 ![fotcir13](assets/img/Semana3/fotcir13.jpg)
 **Video:**[Video del circuito 13 funcionando (YouTube)](https://youtu.be/tY-GWnorAdo?si=8mNczIZf4OHHZR98)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  pinMode(13, OUTPUT);	//LED
+  
+  pinMode(8, INPUT);	//BOTON
+}
+
+void loop()
+{
+  
+  if (digitalRead(8) == HIGH)		//Pregunta si el boton1 esta activado
+  {
+    digitalWrite(13, HIGH);			//SI: encendemos el led1
+  }
+  else if(digitalRead(8) == LOW)	//Pregunta si el boton1 esta desactivado
+  {
+    digitalWrite(13, LOW);			//SI: apagamos el led1
+  }
+}
 ```
 ## 14° Circuito
 
@@ -282,8 +419,39 @@ baseurl: "/TU_REPO"
 ![fotcir14](assets/img/Semana3/fotcir14.jpg)
 **Video:**[Video del circuito 14 funcionando (YouTube)](https://youtu.be/THGUtYVkBB8?si=s8locrJbJ2duXXFE)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  pinMode(13, OUTPUT);	//LED1
+  pinMode(8, INPUT);	//BOTON1
+  
+  pinMode(11, OUTPUT);	//LED2
+  pinMode(2, INPUT);	//BOTON2
+}
+
+void loop()
+{
+  
+  if (digitalRead(8) == HIGH)		//Pregunta si el boton1 esta activado
+  {
+    digitalWrite(13, HIGH);			//SI: encendemos el led1
+  }
+  else if(digitalRead(8) == LOW)	//Pregunta si el boton1 esta desactivado
+  {
+    digitalWrite(13, LOW);			//SI: apagamos el led1
+  }
+  
+  if (digitalRead(2) == HIGH)		//Pregunta si el boton2 esta activado
+  {
+    digitalWrite(11, HIGH);			//SI: encendemos el led2
+  }
+  else if(digitalRead(2) == LOW)	//Pregunta si el boton2 esta desactivado
+  {
+    digitalWrite(11, LOW);			//SI: apagamos el led2
+  }
+}
 ```
 ## 15° Circuito
 
@@ -291,8 +459,31 @@ baseurl: "/TU_REPO"
 ![fotcir15](assets/img/Semana3/fotcir15.jpg)
 **Video:**[Video del circuito 15 funcionando (YouTube)](https://youtu.be/h30HCgBj6zM?si=bGn3ScuOgziIoCxY)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  //Inicializamos puertos
+  pinMode(13, OUTPUT);	//LED1
+  
+  pinMode(8, INPUT);	//BOTON1
+  pinMode(2, INPUT);	//BOTON2
+}
+
+void loop()
+  
+{
+  if (digitalRead(8) == HIGH || digitalRead(2) == HIGH)		//Pregunta si se cumple la condición
+  {
+    digitalWrite(13, HIGH);			//SI: encendemos el led1
+  }
+  else	//En caso contrario
+  {
+    digitalWrite(13, LOW);			//NO: apagamos el led1
+  }
+
+}
 ```
 ## 16° Circuito
 
@@ -300,8 +491,31 @@ baseurl: "/TU_REPO"
 ![fotcir16](assets/img/Semana3/fotcir16.jpg)
 **Video:**[Video del circuito 16 funcionando (YouTube)](https://youtu.be/DiiEJSx_h1g?si=G6smIfZQGmCcW21o)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+//
+
+void setup()
+{
+  //Inicializamos puertos
+  pinMode(13, OUTPUT);	//LED1
+  
+  pinMode(8, INPUT);	//BOTON1
+  pinMode(2, INPUT);	//BOTON2
+}
+
+void loop()
+{
+  
+  if (digitalRead(8) == HIGH && digitalRead(2) == HIGH)		//Pregunta si se cumple la condición
+  {
+    digitalWrite(13, HIGH);			//SI: encendemos el led1
+  }
+  else	//En caso contrario
+  {
+    digitalWrite(13, LOW);			//NO: apagamos el led1
+  }
+
+}
 ```
 ## 17° Circuito
 
@@ -309,8 +523,69 @@ baseurl: "/TU_REPO"
 ![fotcir17](assets/img/Semana3/fotcir17.jpg)
 **Video:**[Video del circuito 17 funcionando (YouTube)](https://youtu.be/tkFDoZR8kcc?si=ZEEhFyLY-ftpW8zC)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+// CONTADOR
+
+int cuenta = 0;		//Variable que guarda el numero de veces que se ha contado
+
+void setup()
+{
+  //Inicializamos puertos
+  pinMode(13, OUTPUT);	//LED1
+  pinMode(12, OUTPUT);	//LED2
+  pinMode(11, OUTPUT);	//LED3
+  pinMode(10, OUTPUT);	//LED4
+  pinMode(2, INPUT);	//BOTON
+}
+
+void loop()
+{
+  if (digitalRead(2) == HIGH)		//Pregunta si el boton esta activado
+  {
+    cuenta++;
+    delay(500);
+  }
+  if(cuenta >= 5)
+  {
+    cuenta = 0;
+  }
+  
+  if(cuenta == 0)
+  {
+  	digitalWrite(13, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(10, LOW);
+  } 
+  else if(cuenta == 1)
+  {
+  	digitalWrite(13, HIGH);
+    digitalWrite(12, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(10, LOW);
+  } 
+  else if(cuenta == 2)
+  {
+  	digitalWrite(13, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(11, LOW);
+    digitalWrite(10, LOW);
+  }
+  else if(cuenta == 3)
+  {
+  	digitalWrite(13, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(11, HIGH);
+    digitalWrite(10, LOW);
+  }
+  else if(cuenta == 4)
+  {
+  	digitalWrite(13, HIGH);
+    digitalWrite(12, HIGH);
+    digitalWrite(11, HIGH);
+    digitalWrite(10, HIGH);
+  }
+}
 ```
 ## 18° Circuito
 
@@ -318,8 +593,24 @@ baseurl: "/TU_REPO"
 ![fotcir18](assets/img/Semana3/fotcir18.jpg)
 **Video:**[Video del circuito 18 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+// Incluímos la librería para poder controlar el servo
+#include <Servo.h>
+
+// Declaramos la variable para controlar el servo
+Servo servoMotor;
+
+void setup()
+{ 
+  // Iniciamos el servo para que empiece a trabajar con el pin 9
+  servoMotor.attach(9);
+}
+
+void loop()
+{
+  // Desplazamos a la posición 90º
+  servoMotor.write(90);
+}
 ```
 ## 19° Circuito
 
@@ -327,8 +618,36 @@ baseurl: "/TU_REPO"
 ![fotcir19](assets/img/Semana3/fotcir19.jpg)
 **Video:**[Video del circuito 19 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+// Incluímos la librería para poder controlar el servo
+#include <Servo.h>
+
+// Declaramos la variable para controlar el servo
+Servo servoMotor;
+
+void setup()
+{
+  // Iniciamos el servo para que empiece a trabajar con el pin 9
+  servoMotor.attach(9);
+}
+
+void loop()
+{
+  // Desplazamos a la posición 0º
+  servoMotor.write(0);
+  // Esperamos 1 segundo
+  delay(1000);
+  
+  // Desplazamos a la posición 90º
+  servoMotor.write(90);
+  // Esperamos 1 segundo
+  delay(1000);
+  
+  // Desplazamos a la posición 180º
+  servoMotor.write(180);
+  // Esperamos 1 segundo
+  delay(1000);
+}
 ```
 ## 20° Circuito
 
@@ -336,8 +655,33 @@ baseurl: "/TU_REPO"
 ![fotcir20](assets/img/Semana3/fotcir20.jpg)
 **Video:**[Video del circuito 20 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+// Incluímos la librería para poder controlar el servo
+#include <Servo.h>
+
+// Declaramos la variable para controlar el servo
+Servo servoMotor;
+int valor;		//variable que almacena la lectura analógica raw
+int pos;        //Variable que almacena la posicion del servo
+
+void setup()
+{
+  // Iniciamos el servo para que empiece a trabajar con el pin 9
+  servoMotor.attach(9);
+}
+
+void loop()
+{
+  // leemos del pin A0 valor
+  valor = analogRead(A0);
+  //Convertimos el valor del potenciometro a una 
+  //que entienda el servo
+  pos = map(valor, 0, 1023, 0, 180);
+  //Mandamos la posicion al servo 
+  servoMotor.write(pos);
+  // Esperamos 1 segundo
+  delay(1000);
+}
 ```
 # 21° Circuito
 
@@ -345,8 +689,39 @@ baseurl: "/TU_REPO"
 ![fotcir21](assets/img/Semana3/fotcir21.jpg)
 **Video:**[Video del circuito 21 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+#include <Servo.h>
+int valor;		//variable que almacena la lectura analógica raw
+int pos;        //Variable que almacena la posicion del servo
+
+
+//Le decimos al codigo que va a existir un servo
+//llamado my servo
+Servo myservo1;
+Servo myservo2;
+
+void setup()
+{
+  //Le decimos al codigo donde esta conectado el servo 1
+  myservo1.attach(9);
+  //Le decimos al codigo donde esta conectado el servo 2
+  myservo2.attach(2);
+}
+
+void loop()
+{
+  // leemos el valor de potenciometro
+  valor = analogRead(A0);
+  //Convertimos el valor del potenciometro a una 
+  //que entienda el servo
+  pos = map(valor, 0, 1023, 0, 180);
+  //Mandamos la posicion al servo 1
+  myservo1.write(pos);
+  //Mandamos la posicion al servo 2
+  myservo2.write(pos);
+  //esperamos un poco para que se mueva
+  delay(10);
+}
 ```
 # 22° Circuito
 
@@ -354,8 +729,46 @@ baseurl: "/TU_REPO"
 ![fotcir22](assets/img/Semana3/fotcir22.jpg)
 **Video:**[Video del circuito 22 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+#include <Servo.h>
+int valor1;		//variable que almacena la 
+				//lectura analógica1
+int valor2;		//variable que almacena la 
+				//lectura analógica2
+int pos1;        //Variable que almacena la posicion del servo1
+int pos2;        //Variable que almacena la posicion del servo2
+
+
+//Le decimos al codigo que va a existir un servo
+//llamado my servo
+Servo myservo1;
+Servo myservo2;
+
+void setup()
+{
+  //Le decimos al codigo donde esta conectado el servo 1
+  myservo1.attach(9);
+  //Le decimos al codigo donde esta conectado el servo 2
+  myservo2.attach(2);
+}
+
+void loop()
+{
+  // leemos el valor de potenciometro1
+  valor1 = analogRead(A0);
+  // leemos el valor de potenciometro2
+  valor2 = analogRead(A1);
+  //Convertimos el valor del potenciometro a una 
+  //que entienda el servo
+  pos1 = map(valor1, 0, 1023, 0, 180);
+  pos2 = map(valor2, 0, 1023, 0, 180);
+  //Mandamos la posicion al servo 1
+  myservo1.write(pos1);
+  //Mandamos la posicion al servo 2
+  myservo2.write(pos2);
+  //esperamos un poco para que se mueva
+  delay(10);
+}
 ```
 # 23° Circuito
 
@@ -363,8 +776,39 @@ baseurl: "/TU_REPO"
 ![fotcir23](assets/img/Semana3/fotcir23.jpg)
 **Video:**[Video del circuito 23 funcionando (YouTube)](https://youtu.be/wxzb1nuZ_Fw?si=5iwkVhriuLhPJsmM)
 ```yml
-url: "https://TU_USUARIO.github.io"
-baseurl: "/TU_REPO"
+// C++ code
+#include <Servo.h>
+int valor;		//variable que almacena la lectura analógica raw
+int pos;        //Variable que almacena la posicion del servo
+
+
+//Le decimos al codigo que va a existir un servo
+//llamado my servo
+Servo myservo1;
+Servo myservo2;
+
+void setup()
+{
+  //Le decimos al codigo donde esta conectado el servo 1
+  myservo1.attach(9);
+  //Le decimos al codigo donde esta conectado el servo 2
+  myservo2.attach(2);
+}
+
+void loop()
+{
+  // leemos el valor de potenciometro
+  valor = analogRead(A0);
+  //Convertimos el valor del potenciometro a una 
+  //que entienda el servo
+  pos = map(valor, 0, 1023, 0, 180);
+  //Mandamos la posicion al servo 1
+  myservo1.write(pos);
+  //Mandamos la posicion al servo 2
+  myservo2.write(pos);
+  //esperamos un poco para que se mueva
+  delay(10);
+}
 ```
 ## Conclusión 
 
