@@ -591,7 +591,7 @@ void loop()
 
 ![tincir18](assets/img/Semana3/tinkercadcircuito/tincir18.png)
 ![fotcir18](assets/img/Semana3/fotoscircuitos/fotcir18.jpeg)
-**Video:**[Video del circuito 18 funcionando (YouTube)]()
+**Video:**[Video del circuito 18 funcionando (YouTube)](https://youtube.com/shorts/0M8sfi4dYwc?si=juT-7To5rI-828T8)
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -616,7 +616,7 @@ void loop()
 
 ![tincir19](assets/img/Semana3/tinkercadcircuito/tincir19.png)
 ![fotcir19](assets/img/Semana3/fotoscircuitos/fotcir19.jpeg)
-**Video:**[Video del circuito 19 funcionando (YouTube)]()
+**Video:**[Video del circuito 19 funcionando (YouTube)](https://youtube.com/shorts/0NmES7V9-J0?si=ff1uN4ix_EDrc_h7)
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -653,7 +653,7 @@ void loop()
 
 ![tincir20](assets/img/Semana3/tinkercadcircuito/tincir20.png)
 ![fotcir20](assets/img/Semana3/fotoscircuitos/fotcir20.jpeg)
-**Video:**[Video del circuito 20 funcionando (YouTube)]()
+**Video:**[Video del circuito 20 funcionando (YouTube)](https://youtube.com/shorts/jQ6wPd2raiQ?si=SNKrYa9GhDW8WT9u)
 ```yml
 // C++ code
 // Incluímos la librería para poder controlar el servo
@@ -687,7 +687,7 @@ void loop()
 
 ![tincir21](assets/img/Semana3/tinkercadcircuito/tincir21.png)
 ![fotcir21](assets/img/Semana3/fotoscircuitos/fotcir21.jpeg)
-**Video:**[Video del circuito 21 funcionando (YouTube)]()
+**Video:**[Video del circuito 21 funcionando (YouTube)](https://youtu.be/Ft2NYLDDQFQ?si=h9vjIvM6-Sk3nWP2)
 ```yml
 // C++ code
 #include <Servo.h>
@@ -727,7 +727,7 @@ void loop()
 
 ![tincir22](assets/img/Semana3/tinkercadcircuito/tincir22.png)
 ![fotcir22](assets/img/Semana3/fotoscircuitos/fotcir22.jpeg)
-**Video:**[Video del circuito 22 funcionando (YouTube)]()
+**Video:**[Video del circuito 22 funcionando (YouTube)](https://youtu.be/YAEeOwJ6Z9Y?si=hYvUY23838AhGynX)
 ```yml
 // C++ code
 #include <Servo.h>
@@ -774,7 +774,7 @@ void loop()
 
 ![tincir23](assets/img/Semana3/tinkercadcircuito/tincir23.png)
 ![fotcir23](assets/img/Semana3/fotoscircuitos/fotcir23.jpeg)
-**Video:**[Video del circuito 23 funcionando (YouTube)]()
+**Video:**[Video del circuito 23 funcionando (YouTube)](https://youtube.com/shorts/B-vAzHncaHw?si=D2OAfNfuaDvxiF00)
 ```yml
 // C++ code
 #include <Servo.h>
@@ -812,4 +812,4 @@ void loop()
 ```
 ## Conclusión 
 
-Aprendí 
+Aprendí bastante acerca de la rpogramación que requiere aduino para funcionar con componentes de todo tipo, como los son potenciometros, servos, botones, leds y otro. Por otra parte fue mucho de aprender como funciona la interfaz de arduino como lo es seleccionar el puerto y la placa arduino. Con esto puedo decir con seguridad que arduino a pesar de que reqiere conocimiento de programación y circuitos, puedo decir que es una plataforma excelente para todo tipo de personas, ya sea por su hardware y sorftware abierto y gratuito, como lo accesible que es para personas de todo el mundo, y que en realmente poco tiempo es capaz de aprender mucho sobre arduino y lograr hacer proyectos de todo tipo. Por último quisiera destacar lo importante que fue todo esto para hacer posteriormente la garra.
