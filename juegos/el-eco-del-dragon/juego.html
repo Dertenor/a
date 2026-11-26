@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,8 +9,20 @@
 </head>
 <body>
 
-    <h1>El Eco del Dragón: La Última Llama</h1>
-    <p>El viaje de Nox está por comenzar...</p>
+    <main id="game-container">
+        <header id="game-header">
+            <h1>El Eco del Dragón</h1>
+            <p>La Última Llama</p>
+        </header>
+
+        <canvas id="game" width="960" height="540">
+            Tu navegador no soporta Canvas.
+        </canvas>
+
+        <footer id="game-controls">
+            <p>WASD o flechas: Mover a Nox</p>
+        </footer>
+    </main>
 
     <script src="juego.js"></script>
 </body>
