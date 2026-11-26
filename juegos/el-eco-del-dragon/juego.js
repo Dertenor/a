@@ -1,0 +1,1 @@
+console.log("El Eco del Dragón: La Última Llama está iniciado.");
