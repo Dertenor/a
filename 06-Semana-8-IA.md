@@ -9,19 +9,24 @@ nav_order: 2
 Esta semana vimos tanto los usos que le podemos dar a la inteligencia artificial como la manera responsable de usarla. A continuación está un videojuego hecho con ia bajo ciertos prompts que hice, use ChatGPT y le pedí que fuera en html.
 
 
-<section id="zona-videojuego">
+<section id="el-eco-del-dragon">
 
-    <h2>🐉 Las Crónicas de Brasa</h2>
+  <h2>El Eco del Dragón: La Última Llama</h2>
 
-    <p>¡Ayuda a los dragones a restaurar su tierra!</p>
+  <p>
+    Un videojuego de fantasía oscura desarrollado
+    con HTML, CSS y JavaScript.
+  </p>
 
-    <iframe
-        src="juegos/cronicas-de-brasa/juego.html"
-        width="100%"
-        height="700"
-        style="border: none; border-radius: 12px;"
-        title="Las Crónicas de Brasa">
-    </iframe>
+  <iframe
+    src="{{ '/juegos/el-eco-del-dragon/juego.html' | relative_url }}"
+    width="100%"
+    height="600"
+    style="border: 2px solid #303a2c; border-radius: 8px;"
+    title="El Eco del Dragón: La Última Llama"
+    loading="lazy">
+  </iframe>
 
 </section>
+
 
