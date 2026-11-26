@@ -29,4 +29,5 @@ Esta semana vimos tanto los usos que le podemos dar a la inteligencia artificial
 
 </section>
 
+El juego trata de un dragón llamado Nox, el cual busca restaurar el equilibrio del bosque, busca las cinco llamas antiguas en el bosque y regresalas al santurio. Con algo de suerte el snautrio podría despertar y restaurar a su vieja gloria el bosque que era antes. 
 
