@@ -4,320 +4,392 @@ const ctx = canvas.getContext("2d");
 
 ctx.imageSmoothingEnabled = false;
 
-const TILE = 30;
-const COLS = canvas.width / TILE;
-const ROWS = canvas.height / TILE;
-
-// Nox: posición y movimiento
-const nox = {
-    x: canvas.width / 2,
-    y: canvas.height / 2,
-    speed: 150,
-    direction: "down"
+const WORLD = { width: 1800, height: 1200 };
+const player = {
+    x: 900,
+    y: 600,
+    speed: 190,
+    size: 18
 };
 
+const camera = { x: 0, y: 0 };
 const keys = {};
+let lastTime = 0;
+let collected = 0;
+let gameWon = false;
+let gameStarted = false;
+
+const trees = [];
+const stones = [];
+const flames = [];
 const obstacles = [];
-const scenery = [];
 
-// Colores del bosque
-const colors = {
-    ground: ["#18251b", "#1b291e", "#202d21"],
-    grass: "#293a25",
-    tree: "#101a13",
-    treeLight: "#263c25",
-    trunk: "#493a27",
-    stone: "#42483c",
-    stoneLight: "#59604d"
-};
+const shrine = { x: 1550, y: 950, size: 55 };
 
-// Generador aleatorio sencillo
-let seed = 12345;
+// Generador aleatorio
+let seed = 92831;
 
 function random() {
     seed = (seed * 16807) % 2147483647;
     return (seed - 1) / 2147483646;
 }
 
-// Crear el terreno
+// Crear el mundo
 function createWorld() {
-    for (let y = 0; y < ROWS; y++) {
-        for (let x = 0; x < COLS; x++) {
-            const color = colors.ground[
-                Math.floor(random() * colors.ground.length)
-            ];
+    // Árboles
+    for (let i = 0; i < 100; i++) {
+        const x = 40 + random() * (WORLD.width - 80);
+        const y = 40 + random() * (WORLD.height - 80);
 
-            ctx.fillStyle = color;
-            ctx.fillRect(x * TILE, y * TILE, TILE, TILE);
+        if (Math.hypot(x - player.x, y - player.y) < 130) continue;
+        if (Math.hypot(x - shrine.x, y - shrine.y) < 100) continue;
 
-            // Pequeñas manchas de hierba
-            if (random() > 0.72) {
-                ctx.fillStyle = colors.grass;
-                ctx.fillRect(
-                    x * TILE + 5,
-                    y * TILE + 7,
-                    4,
-                    3
-                );
+        trees.push({ x, y, size: 30 + random() * 12 });
+        obstacles.push({
+            x: x - 12,
+            y: y - 5,
+            width: 24,
+            height: 22
+        });
+    }
+
+    // Ruinas
+    const ruins = [
+        [350, 300], [390, 300], [430, 300],
+        [350, 340], [430, 340],
+        [350, 380], [390, 380], [430, 380],
+        [1200, 250], [1240, 250],
+        [1200, 290], [1240, 290]
+    ];
+
+    for (const [x, y] of ruins) {
+        stones.push({ x, y });
+        obstacles.push({ x, y, width: 30, height: 30 });
+    }
+
+    // Cinco llamas
+    const flamePositions = [
+        [300, 180],
+        [700, 250],
+        [1400, 400],
+        [500, 850],
+        [1250, 850]
+    ];
+
+    for (const [x, y] of flamePositions) {
+        flames.push({ x, y, collected: false });
+    }
+}
+
+function drawGround() {
+    ctx.fillStyle = "#19261b";
+    ctx.fillRect(0, 0, WORLD.width, WORLD.height);
+
+    // Textura del terreno
+    for (let y = 0; y < WORLD.height; y += 30) {
+        for (let x = 0; x < WORLD.width; x += 30) {
+            if ((x * 7 + y * 13) % 5 === 0) {
+                ctx.fillStyle = "#203022";
+                ctx.fillRect(x + 8, y + 10, 4, 3);
             }
         }
     }
 
-    // Árboles
-    for (let i = 0; i < 95; i++) {
-        const x = Math.floor(random() * COLS);
-        const y = Math.floor(random() * ROWS);
-
-        const px = x * TILE;
-        const py = y * TILE;
-
-        // Dejar espacio alrededor de Nox
-        if (
-            Math.abs(px - nox.x) < 70 &&
-            Math.abs(py - nox.y) < 70
-        ) {
-            continue;
-        }
-
-        scenery.push({
-            type: "tree",
-            x: px,
-            y: py
-        });
-
-        obstacles.push({
-            x: px + 5,
-            y: py + 12,
-            width: 20,
-            height: 16
-        });
-    }
-
-    // Ruinas antiguas
-    const ruins = [
-        { x: 150, y: 120 },
-        { x: 180, y: 120 },
-        { x: 210, y: 120 },
-        { x: 150, y: 150 },
-        { x: 210, y: 150 },
-        { x: 150, y: 180 },
-        { x: 180, y: 180 },
-        { x: 210, y: 180 }
-    ];
-
-    for (const ruin of ruins) {
-        scenery.push({
-            type: "stone",
-            x: ruin.x,
-            y: ruin.y
-        });
-
-        obstacles.push({
-            x: ruin.x,
-            y: ruin.y,
-            width: TILE,
-            height: TILE
-        });
-    }
+    // Caminos
+    ctx.fillStyle = "#303329";
+    ctx.fillRect(850, 0, 90, WORLD.height);
+    ctx.fillRect(850, 900, 750, 70);
 }
 
-// Dibujar árboles
-function drawTree(x, y) {
-    // Sombra
-    ctx.fillStyle = "#0b110d";
-    ctx.fillRect(x + 2, y + 20, 26, 8);
+function drawTree(tree) {
+    const { x, y, size } = tree;
 
-    // Tronco
-    ctx.fillStyle = colors.trunk;
-    ctx.fillRect(x + 12, y + 15, 7, 15);
+    ctx.fillStyle = "#10160f";
+    ctx.fillRect(x - 16, y + 5, 32, 18);
 
-    // Copa
-    ctx.fillStyle = colors.tree;
-    ctx.fillRect(x + 3, y + 5, 24, 20);
-    ctx.fillRect(x + 7, y, 16, 28);
-    ctx.fillRect(x, y + 10, 30, 12);
+    ctx.fillStyle = "#493b27";
+    ctx.fillRect(x - 5, y - 2, 10, 24);
 
-    // Luz de las hojas
-    ctx.fillStyle = colors.treeLight;
-    ctx.fillRect(x + 7, y + 6, 6, 5);
-    ctx.fillRect(x + 17, y + 11, 5, 4);
+    ctx.fillStyle = "#101c13";
+    ctx.fillRect(x - size / 2, y - size, size, size);
+    ctx.fillRect(x - size / 2 - 5, y - size / 2, size + 10, 12);
+
+    ctx.fillStyle = "#2a4028";
+    ctx.fillRect(x - 10, y - size + 8, 9, 8);
+    ctx.fillRect(x + 5, y - size / 2, 7, 5);
 }
 
-// Dibujar ruinas
-function drawStone(x, y) {
-    ctx.fillStyle = colors.stone;
-    ctx.fillRect(x + 2, y + 4, 26, 24);
+function drawStone(stone) {
+    ctx.fillStyle = "#41483b";
+    ctx.fillRect(stone.x, stone.y, 30, 30);
 
-    ctx.fillStyle = colors.stoneLight;
-    ctx.fillRect(x + 5, y + 6, 8, 4);
-    ctx.fillRect(x + 17, y + 15, 7, 3);
+    ctx.fillStyle = "#69705b";
+    ctx.fillRect(stone.x + 4, stone.y + 4, 10, 5);
 
-    ctx.fillStyle = "#252c24";
-    ctx.fillRect(x + 13, y + 10, 4, 12);
+    ctx.fillStyle = "#292f28";
+    ctx.fillRect(stone.x + 15, stone.y + 15, 8, 4);
 }
 
-// Dibujar a Nox
+function drawFlame(flame) {
+    if (flame.collected) return;
+
+    const pulse = Math.sin(performance.now() / 180) * 3;
+
+    ctx.fillStyle = "#59421d";
+    ctx.fillRect(flame.x - 7, flame.y + 8, 14, 5);
+
+    ctx.fillStyle = "#e6a832";
+    ctx.fillRect(flame.x - 5, flame.y - 5 - pulse, 10, 15);
+
+    ctx.fillStyle = "#fff0a0";
+    ctx.fillRect(flame.x - 2, flame.y - 3 - pulse, 4, 9);
+
+    ctx.fillStyle = "#9aff69";
+    ctx.fillRect(flame.x - 2, flame.y + 12, 4, 3);
+}
+
+function drawShrine() {
+    const active = collected === flames.length;
+
+    ctx.fillStyle = "#30392e";
+    ctx.fillRect(shrine.x - 40, shrine.y - 35, 80, 70);
+
+    ctx.fillStyle = "#68745b";
+    ctx.fillRect(shrine.x - 35, shrine.y - 35, 70, 8);
+
+    ctx.fillStyle = active ? "#9aff69" : "#252c25";
+    ctx.fillRect(shrine.x - 15, shrine.y - 20, 30, 40);
+
+    ctx.fillStyle = active ? "#d9ffad" : "#454b40";
+    ctx.fillRect(shrine.x - 7, shrine.y - 12, 14, 24);
+}
+
 function drawNox() {
-    const x = Math.round(nox.x);
-    const y = Math.round(nox.y);
+    const x = Math.round(player.x);
+    const y = Math.round(player.y);
 
     // Sombra
-    ctx.fillStyle = "#0b100c";
-    ctx.fillRect(x - 16, y + 9, 34, 8);
+    ctx.fillStyle = "#080d0b";
+    ctx.fillRect(x - 15, y + 9, 30, 7);
 
     // Cola
     ctx.fillStyle = "#080d12";
-    ctx.fillRect(x - 19, y - 2, 8, 7);
-    ctx.fillRect(x - 24, y - 6, 7, 7);
+    ctx.fillRect(x - 19, y - 3, 9, 7);
+    ctx.fillRect(x - 25, y - 7, 8, 7);
 
     // Cuerpo
     ctx.fillStyle = "#080d12";
-    ctx.fillRect(x - 12, y - 8, 25, 18);
+    ctx.fillRect(x - 12, y - 9, 25, 19);
 
     // Patas
-    ctx.fillRect(x - 10, y + 5, 6, 9);
-    ctx.fillRect(x + 6, y + 5, 6, 9);
-    ctx.fillRect(x - 10, y - 12, 6, 7);
-    ctx.fillRect(x + 6, y - 12, 6, 7);
+    ctx.fillRect(x - 10, y + 5, 6, 10);
+    ctx.fillRect(x + 6, y + 5, 6, 10);
+    ctx.fillRect(x - 10, y - 13, 6, 8);
+    ctx.fillRect(x + 6, y - 13, 6, 8);
 
-    // Alas plegadas
-    ctx.fillStyle = "#111b25";
-    ctx.fillRect(x - 7, y - 7, 10, 11);
-    ctx.fillRect(x - 3, y - 11, 8, 8);
+    // Alas
+    ctx.fillStyle = "#18232a";
+    ctx.fillRect(x - 7, y - 7, 11, 12);
 
     // Cabeza
     ctx.fillStyle = "#080d12";
-    ctx.fillRect(x + 7, y - 11, 15, 14);
-    ctx.fillRect(x + 15, y - 6, 10, 8);
+    ctx.fillRect(x + 7, y - 12, 16, 14);
+    ctx.fillRect(x + 17, y - 7, 9, 8);
 
     // Cuernos
-    ctx.fillStyle = "#424b4b";
-    ctx.fillRect(x + 9, y - 17, 4, 8);
-    ctx.fillRect(x + 18, y - 16, 4, 7);
+    ctx.fillStyle = "#56605b";
+    ctx.fillRect(x + 9, y - 18, 4, 8);
+    ctx.fillRect(x + 18, y - 17, 4, 8);
 
-    // Ojo verde
+    // Ojo
     ctx.fillStyle = "#8bff55";
-    ctx.fillRect(x + 18, y - 8, 4, 4);
-
-    // Brillo del ojo
-    ctx.fillStyle = "#d9ffb0";
-    ctx.fillRect(x + 19, y - 8, 2, 2);
+    ctx.fillRect(x + 19, y - 9, 4, 4);
 }
 
-// Comprobar colisiones
 function collides(x, y) {
-    const size = 12;
+    const r = player.size / 2;
 
-    for (const obstacle of obstacles) {
+    if (
+        x - r < 0 || y - r < 0 ||
+        x + r > WORLD.width ||
+        y + r > WORLD.height
+    ) return true;
+
+    for (const o of obstacles) {
         if (
-            x + size > obstacle.x &&
-            x - size < obstacle.x + obstacle.width &&
-            y + size > obstacle.y &&
-            y - size < obstacle.y + obstacle.height
-        ) {
-            return true;
-        }
+            x + r > o.x &&
+            x - r < o.x + o.width &&
+            y + r > o.y &&
+            y - r < o.y + o.height
+        ) return true;
     }
 
     return false;
 }
 
-// Dibujar el mundo
-function drawWorld() {
-    createWorld();
+function update(dt) {
+    if (gameWon) return;
 
-    for (const object of scenery) {
-        if (object.type === "tree") {
-            drawTree(object.x, object.y);
-        } else {
-            drawStone(object.x, object.y);
-        }
-    }
-}
-
-// Movimiento de Nox
-function update(deltaTime) {
     let dx = 0;
     let dy = 0;
 
-    if (keys["ArrowUp"] || keys["w"]) dy -= 1;
-    if (keys["ArrowDown"] || keys["s"]) dy += 1;
-    if (keys["ArrowLeft"] || keys["a"]) dx -= 1;
-    if (keys["ArrowRight"] || keys["d"]) dx += 1;
+    if (keys["w"] || keys["arrowup"]) dy--;
+    if (keys["s"] || keys["arrowdown"]) dy++;
+    if (keys["a"] || keys["arrowleft"]) dx--;
+    if (keys["d"] || keys["arrowright"]) dx++;
 
-    // Normalizar movimiento diagonal
-    if (dx !== 0 && dy !== 0) {
-        dx *= 0.7071;
-        dy *= 0.7071;
+    if (dx && dy) {
+        dx *= Math.SQRT1_2;
+        dy *= Math.SQRT1_2;
     }
 
-    const nextX = nox.x + dx * nox.speed * deltaTime;
-    const nextY = nox.y + dy * nox.speed * deltaTime;
+    const nextX = player.x + dx * player.speed * dt;
+    const nextY = player.y + dy * player.speed * dt;
 
-    if (dx < 0) nox.direction = "left";
-    if (dx > 0) nox.direction = "right";
-    if (dy < 0) nox.direction = "up";
-    if (dy > 0) nox.direction = "down";
+    if (!collides(nextX, player.y)) player.x = nextX;
+    if (!collides(player.x, nextY)) player.y = nextY;
 
-    if (!collides(nextX, nox.y)) {
-        nox.x = nextX;
+    // Recoger llamas
+    for (const flame of flames) {
+        if (
+            !flame.collected &&
+            Math.hypot(player.x - flame.x, player.y - flame.y) < 27
+        ) {
+            flame.collected = true;
+            collected++;
+        }
     }
 
-    if (!collides(nox.x, nextY)) {
-        nox.y = nextY;
+    // Activar santuario
+    if (
+        collected === flames.length &&
+        Math.hypot(player.x - shrine.x, player.y - shrine.y) < 48
+    ) {
+        gameWon = true;
     }
 
-    // Límites del escenario
-    nox.x = Math.max(15, Math.min(canvas.width - 15, nox.x));
-    nox.y = Math.max(15, Math.min(canvas.height - 15, nox.y));
+    // Cámara
+    camera.x = Math.max(0, Math.min(
+        WORLD.width - canvas.width,
+        player.x - canvas.width / 2
+    ));
+
+    camera.y = Math.max(0, Math.min(
+        WORLD.height - canvas.height,
+        player.y - canvas.height / 2
+    ));
 }
 
-// Controles de teclado
+function drawHUD() {
+    ctx.fillStyle = "rgba(5, 10, 7, 0.85)";
+    ctx.fillRect(15, 15, 260, 62);
+
+    ctx.fillStyle = "#b8d69a";
+    ctx.font = "bold 17px monospace";
+    ctx.fillText("EL BOSQUE DE LOS OLVIDADOS", 25, 38);
+
+    ctx.fillStyle = "#f1d78b";
+    ctx.font = "15px monospace";
+    ctx.fillText(`Llamas antiguas: ${collected}/5`, 25, 62);
+
+    ctx.fillStyle = "#d5d9c8";
+    ctx.font = "13px monospace";
+
+    ctx.fillText(
+        collected === 5
+            ? "¡Ve al santuario!"
+            : "Encuentra las cinco llamas",
+        20,
+        canvas.height - 20
+    );
+}
+
+function drawVictory() {
+    ctx.fillStyle = "rgba(4, 9, 6, 0.88)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.textAlign = "center";
+
+    ctx.fillStyle = "#b9ed8b";
+    ctx.font = "bold 36px monospace";
+    ctx.fillText("¡EL SANTUARIO HA DESPERTADO!", canvas.width / 2, 210);
+
+    ctx.fillStyle = "#e4e4d1";
+    ctx.font = "19px monospace";
+    ctx.fillText("Nox ha recuperado las cinco llamas antiguas.", canvas.width / 2, 270);
+
+    ctx.fillStyle = "#eacb78";
+    ctx.fillText("El eco del dragón vuelve a escucharse...", canvas.width / 2, 315);
+
+    ctx.fillStyle = "#b9ed8b";
+    ctx.font = "17px monospace";
+    ctx.fillText("Pulsa ENTER para volver a jugar", canvas.width / 2, 390);
+
+    ctx.textAlign = "left";
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.save();
+    ctx.translate(-Math.floor(camera.x), -Math.floor(camera.y));
+
+    drawGround();
+
+    for (const stone of stones) drawStone(stone);
+    for (const tree of trees) drawTree(tree);
+    for (const flame of flames) drawFlame(flame);
+
+    drawShrine();
+    drawNox();
+
+    ctx.restore();
+
+    drawHUD();
+
+    if (gameWon) drawVictory();
+}
+
+function restart() {
+    player.x = 900;
+    player.y = 600;
+
+    collected = 0;
+    gameWon = false;
+
+    for (const flame of flames) {
+        flame.collected = false;
+    }
+
+    camera.x = 0;
+    camera.y = 0;
+}
+
 window.addEventListener("keydown", (event) => {
     const key = event.key.toLowerCase();
 
     if (
-        key.startsWith("arrow") ||
-        key === "w" ||
-        key === "a" ||
-        key === "s" ||
-        key === "d"
-    ) {
-        event.preventDefault();
-    }
+        ["arrowup", "arrowdown", "arrowleft", "arrowright", " "].includes(key)
+    ) event.preventDefault();
 
     keys[key] = true;
+
+    if (gameWon && key === "enter") restart();
 });
 
 window.addEventListener("keyup", (event) => {
     keys[event.key.toLowerCase()] = false;
 });
 
-// Bucle principal
-let lastTime = 0;
-
 function gameLoop(time) {
-    const deltaTime = Math.min((time - lastTime) / 1000, 0.05);
+    const dt = Math.min((time - lastTime) / 1000, 0.05);
     lastTime = time;
 
-    update(deltaTime);
-
-    // Dibujar el escenario
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    for (const object of scenery) {
-        if (object.type === "tree") {
-            drawTree(object.x, object.y);
-        } else {
-            drawStone(object.x, object.y);
-        }
-    }
-
-    drawNox();
+    update(dt);
+    draw();
 
     requestAnimationFrame(gameLoop);
 }
 
-// Iniciar
-drawWorld();
+createWorld();
 requestAnimationFrame(gameLoop);
