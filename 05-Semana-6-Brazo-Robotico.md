@@ -15,22 +15,35 @@ Aquí voy a detallar todo lo que hice para crear mi brazo robóticoy lo que apre
 A continucación pondré todos los materiales que usé para contruir mi garra
 
 1.- Una tarjeta arduino UNO
+![componente1brazo](assets/img/brazo/tarjetaarduino.jpeg)
+
 
 2.- Jumpers (tanto hembras como machos).
+![componente2brazo](assets/img/Semana3/componentes/componente4.jpeg)
+
 
 3.- 6 potenciometros.
+![componente3brazo](assets/img/brazo/potenciometros.jpeg)
 
 4.- 3 servomotores mg95.
+![componente4brazo](assets/img/brazo/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
 
 5.- 3 servomotores sg90.
+![componente5brazo](assets/img/brazo/servossg90.jpeg)
 
 
 
-## ¿Cómo usar Arduino?
+## Diseños en Solid Works
 
-1.- **Instalar**: Aúnque sea redundante también es bueno poner este paso primero, ya que para usar arduino obviamente primero hay que instalarlo por lo que para eso deberás ir al sitio ofical de arduino en el cual buscarás el partado para instalar la versión ofical de arduino, ahí te dejara instalar múltiples versiones de arduino. dependiendo de tu dispositivo (dependiendo de su sitema operativo), con la posibilidad de incluso instalaer versiones pasadas incluso si así lo deseas. Los últimos pasos son dar los npermisos necesarios para que arduino funcvione de manera apropiada en tu dispositivo.
+1.- **Instalar**: T
+![baseppinzasolid](assets/img/brazo/basepinza.jpeg)
 
-2.- **Interfaz**: Cuando abreas ya la aplicación de arduino podrás ver lo que yo dividiría de cuatro maneras: interfaz código, primera barra superior, segunda barra superior y barra lateral izquierda.
+2.- **Interfaz**: T
+![brazogarrasolid](assets/img/brazo/brazoypinzagarra.jpeg)
 
-3.- **Interfaz Código**: por default ya hay una base para crear un código y es el apartado que abarca más espacio de la pantalla en el cual tendrás que escribir el código que quieres subir o programar, ya que sirve tanto para subir el código a una tarjeta compatible, como para compilar un código y hacer simulaciones simples.
-```yml
+3.- **Interfaz Código**: T
+![cajapinzasolid](assets/img/brazo/cajapinza.jpeg)
+
+![pinzafoto](assets/img/brazo/pinzafoto.jpeg)
+
+![fotogarracompleta](assets/img/brazo/fotogarracompleta.jpeg)

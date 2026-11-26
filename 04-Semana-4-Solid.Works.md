@@ -28,6 +28,12 @@ Ahora vamos a ser uso de las asintotas, en el mismo lugar donde encontramos la h
 
 Ahora tocan los retángulos que hay dentro del cuadrado, estos son para hacer las "muescas" en donde iran nuestras otras piezas, nuestro mdf es de 3mm por lo que el ancho de estas muescas será de la misma medida, en mi caso la haré de 30mm de largo pero esto puede variar, lo único que importa es que todas las muecas y pestañas sean de mismo tamaño, ahora hay una parte importante ya que en Solid Works no existe la opción de "centrar", por lo que necesitaremos usar matemáticas, en mi caso como cada muesca mide 30mm, y el largo del cuadrado es de 50mm, la distantancia del lado del cubo a la muesca será de 10mm, para hacer esto volveremos a usar "smart dimension" pero ahora selleccionaremos dos líneas como se muestra a continuación:
 
+![asintotascubo](assets/img/cubo/solidcuboasintotas.jpeg)
+
 Con esto ya aprendiste lo básico, ahoara solo toca hacer los otros lados, aquí están la meididas que utilicé yo.
 
 Una vez que que tengas todas las medidas tenemos que obstruir la pieza, para esto tenemos que cambiar de la pestaña "sketch" a la pestaña de "features", hasta la izquierda tenemos la opción de "extruded boss/base", ahora nos mostrará nuestra pieza en forma tridimensional con un altura amarilla, nos abrirá un nuevo recuadro, a la izquierda 
+
+![piezascuboarriba](assets/img/cubo/piezascuboarriba.jpeg)
+
+![cuboarmado](assets/img/cubo/cuboarmadofoto.jpeg)
